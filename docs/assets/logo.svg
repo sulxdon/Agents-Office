@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Agent Office logo">
+  <rect x="8" y="8" width="496" height="496" rx="112" fill="#f59e0b"/>
+  <!-- floor plan: office outline -->
+  <g fill="none" stroke="#1c1917" stroke-width="34" stroke-linejoin="round">
+    <path d="M120 400 V176 Q120 120 176 120 H336 Q392 120 392 176 V400"/>
+  </g>
+  <!-- door gap marker -->
+  <rect x="222" y="386" width="68" height="28" rx="8" fill="#1c1917"/>
+  <!-- desk -->
+  <rect x="168" y="196" width="176" height="52" rx="12" fill="#1c1917"/>
+  <!-- monitor glow -->
+  <rect x="232" y="164" width="48" height="26" rx="6" fill="#1c1917"/>
+  <!-- agent -->
+  <circle cx="256" cy="316" r="44" fill="#1c1917"/>
+  <!-- speech bubble -->
+  <rect x="318" y="252" width="58" height="40" rx="12" fill="#1c1917"/>
+  <path d="M330 292 L324 314 L348 292 Z" fill="#1c1917"/>
+</svg>

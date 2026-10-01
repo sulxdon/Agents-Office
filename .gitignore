@@ -1,0 +1,7 @@
+node_modules/
+.next/
+out/
+data/*.sqlite
+*.log
+.DS_Store
+docs/chat-export-*.json

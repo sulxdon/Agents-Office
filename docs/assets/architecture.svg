@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-label="Agent Office architecture">
+  <rect width="1200" height="620" fill="#0c0a09"/>
+  <text x="60" y="58" font-family="system-ui,-apple-system,'Segoe UI',sans-serif" font-size="30" font-weight="700" fill="#fafaf9">How it works</text>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+  <!-- columns -->
+  <g font-family="system-ui,-apple-system,'Segoe UI',sans-serif">
+    <text x="60" y="110" font-size="17" font-weight="700" letter-spacing="3" fill="#78716c">BROWSER</text>
+    <text x="470" y="110" font-size="17" font-weight="700" letter-spacing="3" fill="#78716c">NEXT.JS SERVER</text>
+    <text x="880" y="110" font-size="17" font-weight="700" letter-spacing="3" fill="#78716c">PROVIDERS + STORAGE</text>
+  </g>
+  <!-- browser boxes -->
+  <g font-family="system-ui,-apple-system,'Segoe UI',sans-serif" font-size="20" fill="#e7e5e4">
+    <rect x="40" y="130" width="330" height="86" rx="10" fill="#1c1917" stroke="#44403c" stroke-width="2"/>
+    <text x="60" y="163" font-weight="700" fill="#f59e0b">2D office canvas</text>
+    <text x="60" y="192" font-size="16" fill="#a8a29e">PixiJS: rooms, agents, bubbles</text>
+    <rect x="40" y="230" width="330" height="86" rx="10" fill="#1c1917" stroke="#44403c" stroke-width="2"/>
+    <text x="60" y="263" font-weight="700" fill="#f59e0b">Zustand store</text>
+    <text x="60" y="292" font-size="16" fill="#a8a29e">world state, persisted locally</text>
+    <rect x="40" y="330" width="330" height="86" rx="10" fill="#1c1917" stroke="#44403c" stroke-width="2"/>
+    <text x="60" y="363" font-weight="700" fill="#f59e0b">SSE client + poll</text>
+    <text x="60" y="392" font-size="16" fill="#a8a29e">live events, auto-reconcile</text>
+    <rect x="40" y="430" width="330" height="86" rx="10" fill="#1c1917" stroke="#44403c" stroke-width="2"/>
+    <text x="60" y="463" font-weight="700" fill="#f59e0b">BYO keys</text>
+    <text x="60" y="492" font-size="16" fill="#a8a29e">localStorage, sent per request</text>
+  </g>
+  <!-- server boxes -->
+  <g font-family="system-ui,-apple-system,'Segoe UI',sans-serif" font-size="20" fill="#e7e5e4">
+    <rect x="450" y="130" width="330" height="86" rx="10" fill="#1c1917" stroke="#44403c" stroke-width="2"/>
+    <text x="470" y="163" font-weight="700" fill="#f59e0b">API routes</text>
+    <text x="470" y="192" font-size="16" fill="#a8a29e">goals, chat, tasks, memory…</text>
+    <rect x="450" y="230" width="330" height="86" rx="10" fill="#1c1917" stroke="#44403c" stroke-width="2"/>
+    <text x="470" y="263" font-weight="700" fill="#f59e0b">Manager + workers</text>
+    <text x="470" y="292" font-size="16" fill="#a8a29e">decompose, delegate, review</text>
+    <rect x="450" y="330" width="330" height="86" rx="10" fill="#1c1917" stroke="#44403c" stroke-width="2"/>
+    <text x="470" y="363" font-weight="700" fill="#f59e0b">SSE bus + outbox</text>
+    <text x="470" y="392" font-size="16" fill="#a8a29e">live fan-out, durable replay</text>
+    <rect x="450" y="430" width="330" height="86" rx="10" fill="#1c1917" stroke="#44403c" stroke-width="2"/>
+    <text x="470" y="463" font-weight="700" fill="#f59e0b">Agent tools</text>
+    <text x="470" y="492" font-size="16" fill="#a8a29e">memory, artifacts, webhooks</text>
+  </g>
+  <!-- provider boxes -->
+  <g font-family="system-ui,-apple-system,'Segoe UI',sans-serif" font-size="20" fill="#e7e5e4">
+    <rect x="860" y="130" width="300" height="86" rx="10" fill="#1c1917" stroke="#44403c" stroke-width="2"/>
+    <text x="880" y="163" font-weight="700" fill="#f59e0b">LLM providers</text>
+    <text x="880" y="192" font-size="16" fill="#a8a29e">OpenAI · Meta · Ollama…</text>
+    <rect x="860" y="230" width="300" height="86" rx="10" fill="#1c1917" stroke="#44403c" stroke-width="2"/>
+    <text x="880" y="263" font-weight="700" fill="#f59e0b">SQLite (sql.js)</text>
+    <text x="880" y="292" font-size="16" fill="#a8a29e">tasks, memory, usage log</text>
+    <rect x="860" y="330" width="300" height="86" rx="10" fill="#1c1917" stroke="#44403c" stroke-width="2"/>
+    <text x="880" y="363" font-weight="700" fill="#f59e0b">Artifacts</text>
+    <text x="880" y="392" font-size="16" fill="#a8a29e">files agents produce</text>
+    <rect x="860" y="430" width="300" height="86" rx="10" fill="#1c1917" stroke="#44403c" stroke-width="2"/>
+    <text x="880" y="463" font-weight="700" fill="#f59e0b">Webhooks</text>
+    <text x="880" y="492" font-size="16" fill="#a8a29e">your own integrations</text>
+  </g>
+  <!-- arrows -->
+  <g stroke="#f59e0b" stroke-width="3" marker-end="url(#arr)">
+    <line x1="375" y1="240" x2="440" y2="200"/>
+    <line x1="375" y1="360" x2="440" y2="370"/>
+    <line x1="785" y1="200" x2="850" y2="170"/>
+    <line x1="785" y1="300" x2="850" y2="280"/>
+    <line x1="785" y1="400" x2="850" y2="380"/>
+  </g>
+  <g font-family="ui-monospace,Consolas,monospace" font-size="14" fill="#78716c">
+    <text x="300" y="205">goals</text>
+    <text x="292" y="352">events</text>
+    <text x="790" y="155">llm</text>
+  </g>
+  <text x="60" y="570" font-family="system-ui,-apple-system,'Segoe UI',sans-serif" font-size="17" fill="#78716c">Goal in &#8594; plan &#8594; delegated tasks &#8594; review &#8594; deliverables — every step streams to the canvas.</text>
+</svg>
